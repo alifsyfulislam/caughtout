@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.absolute{
+    position: absolute;
+}
+
+body,html{
+    height: 250px;
+    width: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.game_box{
+    height: 250px;
+    width: 300px;
+    background-color: orange;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.timer_div{
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 9px;
+    top: 5px;
+    right: 5px;
+}
+.score_div{
+    padding-top: 1px;
+    width: 75px;
+    height: 20px;
+    background-color: white;
+    text-align: center;
+    top: 225px;
+    right: 5px;
+    border-radius: 5px;
+}
+
+.selector_div{
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding-top: 5px;
+    border-radius: 10px;
+    top: 110px;
+    left: 95px;
+    animation: shakes 1.8s ease infinite;
+    z-index: 1000;
+}
+
+@keyframes shakes {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.ball_div{
+    height: 25px;
+    width: 25px;
+    top: -25px;
+    left: 0px;
+    z-index: 102;
+    background-image: url("ball.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.gloves_area{
+    height: 250px;
+    width: 300px;
+    left: 0;
+    top: 0px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.gloves_div{
+    height: 75px;
+    width: 65px;
+    top: 190px;
+    left: 120px;
+    background-image: url("gloves.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.left_move,.right_move{
+    width: 150px;
+    height: 100px;
+    top: 185px;
+}
+
+.left_move{
+    left: 0;
+    background-image: url("left.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.right_move{
+    left: 150px;
+    background-image: url("right.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.slide_2{
+    height: 250px;
+    width: 300px;
+    background-color: #c82333;
+    top: 0;
+    left: 0;
+}
+
+.title{
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    top: 50px;
+    font-size: 26px;
+}
+
+#result{
+    font-size: 16px;
+}
+
+.restart{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+
